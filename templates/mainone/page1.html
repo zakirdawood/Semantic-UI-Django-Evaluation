@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Introduction</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'page1.css'%}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+
+<body class="ui container" id="main-body">
+    <br>
+
+    <div class="ui centered grid">
+        <div class="sixteen columns">
+            <div class="ui text menu" id="menu">
+                <a class="item active" id="menu-item" href="/page1" style="color: cyan;">Introduction&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page2">Installation&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page3">Tutorial&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page4">Demo&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page5">Conclusion&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page6">Credits&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="ui grid">
+        <div class="eight wide column">
+            <h1 class="ui center aligned header" id="frameworks" style="font-size: 2.5em;">Semantic UI</h1>
+            <br>
+            <img class="ui centered small circular image" id="bounce" src="https://react.semantic-ui.com/logo.png">
+        </div>
+        <div class="eight wide column">
+            <h1 class="ui center aligned header" id="frameworks" style="font-size: 2.5em;">Django</h1>
+            <br>
+            <img class="ui centered medium circular image" id="bounce" src="https://static.djangoproject.com/img/logos/django-logo-negative.png">
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <h1 class="ui center aligned header" id="frameworks" style="font-size: 3em;">Semantic UI Snapshot</h1>
+    <br>
+
+    <div class="fotorama" id="carousel" data-width="1200" data-height="400" data-fit="cover">
+        <div>
+            <br id="spacing">
+            <h1 class="ui center aligned header">Semantic UI and it's Popularity</h1>
+            <div id="spacing-1"><br></div>
+            <p id="info" style="text-align: center;">Semantic UI is a front-end framework developed by Jack Lukic in 2014 officially. Before 2014, Semantic UI offered a couple of pre-relases. Semantic UI serves a purpose of creating
+                beautiful, responsive websites without the effort of tedious CSS code. It is a popular framework in present-time as approximately 9% of all CSS developers have used it before. It has a large community
+                online and offers extensive documentation. Semantic UI is the go-to choice for many startups and small business. Its friendly syntax is convenient for programmers. 
+            </p>
+        </div>
+        <div>
+            <br id="spacing">
+            <h1 class="ui center aligned header">Semantic UI Strengths</h1>
+            <br id="spacing">
+            <div class="ui list" id="strength-list">
+                <div class="item">Syntax uses entire words rather than abbreviations</div>
+                <div class="item">A vass amount of themes to choose from</div>
+                <div class="item">Easy Installation</div>
+                <div class="item">Saves Time</div>
+                <div clas="item">Detailed Documentation</div>
+            </div>
+        </div>
+        <div>
+            <br id="spacing">
+            <h1 class="ui center aligned header">Semantic UI Weaknesses</h1>
+            <br id="spacing">
+            <br id="spacing">
+            <div class="ui list" id="strength-list">
+                <div class="item">Not Compatible with as many browsers as other frameworks</div>
+                <div class="item">Limited Responsive Design</div>
+                <div class="item">Infrequent Updates</div>
+                <div class="item">Designs may not be as unique</div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <h1 class="ui center aligned header" id="frameworks" style="font-size: 3em;">Django Snapshot</h1>
+    <br>
+
+    <div class="fotorama" id="carousel" data-width="1200" data-height="400" data-fit="cover">
+        <div>
+            <br id="spacing">
+            <h1 class="ui center aligned header">Django and it's Popularity</h1>
+            <div id="spacing-1"><br></div>
+            <p id="info" style="text-align: center;">Django is a back-end framework developed by Adrian Holovaty and Simon Willison. It was originally released in 2005 but has had 
+                countless releases/updates since. It's a popular choice for web applications in present time and used by numerous organizations. Django is currently used by YouTube, Instagram, 
+                Spotify and DropBox. Django makes it much easier for developers to process data in their web applications. It allows you to customize content based on the user without the hassle
+                of coding everything. It offers many features, making it the go-to for developers creating web applications involving areas like social media.
+            </p>
+        </div>
+        <div>
+            <br id="spacing">
+            <h1 class="ui center aligned header">Django Strengths</h1>
+            <br id="spacing">
+            <div class="ui list" id="strength-list">
+                <div class="item">Saves Time</div>
+                <div class="item">High level of Security</div>
+                <div class="item">Offers the Flexiblity of Python</div>
+                <div class="item">Large Community and Documentation</div>
+                <div clas="item">Large Amount of Features</div>
+            </div>
+        </div>
+        <div>
+            <br id="spacing">
+            <h1 class="ui center aligned header">Django Weaknesses</h1>
+            <br id="spacing">
+            <br id="spacing">
+            <div class="ui list" id="strength-list">
+                <div class="item">Difficult to Learn</div>
+                <div class="item">Many Pre-defined variables and files that users must use</div>
+                <div class="item">High Sever Processing Time</div>
+                <div class="item">Lack of Conventions</div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <footer class="footer-section">
+        <p>Website created by Zakir Dawood and Muyeed Hossain for the purpose of CPS530 Term Project.</p>
+    </footer>
+</body>

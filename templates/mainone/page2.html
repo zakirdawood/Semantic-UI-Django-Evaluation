@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Installation</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'page6.css'%}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+
+<body class="ui container" id="main-body">
+    <br>
+    
+    <div class="ui centered grid">
+        <div class="sixteen columns">
+            <div class="ui text menu" id="menu">
+                <a class="item" id="menu-item" href="/page1">Introduction&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item active" id="menu-item" href="/page2" style="color: cyan;">Installation&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page3">Tutorial&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page4">Demo&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page5">Conclusion&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page6">Credits&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h1 class="ui center aligned header" id="creator-title">Installation</h1>
+
+    <br>
+    <br>
+
+    <h2 class="ui center aligned header" id="names" style="font-size: 2.1em; color:cyan">Semantic UI Installation</h2>
+
+    <br>
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;">&nbsp;&nbsp;
+        To use Semantic UI as your front-end, you have to import the external link for Semantic UI CSS file, also known as the Semantic UI cdn, in the head tag.
+    </p>
+    
+    <div style="width: 100%; height: 30%; ">
+            <textarea style="width: 100%; height: 60%; background:#EEEDF0; color:#252540; background-color: antiquewhite; margin-left:0%">                                                    
+                &lt;head&gt;
+                &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"&gt;
+                &lt;link rel="stylesheet" type="text/css" href="page6.css"&gt;
+                &lt;script&gt; &lt;src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"&gt;&lt;/script&gt;
+                &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>&gt;
+                &lt;/head&gt;
+            </textarea>
+
+            <p style="color: #EEEDF0; font-size: 1.3em; text-align: center; padding: 0%;">
+                After adding the Semantic UI cdn tags in your head tag, you are good to go and start working on your html using Semantic UI.
+            </p>
+            <p style="color: #EEEDF0; font-size: 1.3em; text-align: center; padding: 0%;">
+                For more information on how to use Semantic UI, check out our <a href = "/page3">Tutorial page.</a>
+            </p>       
+    </div>
+    <br>
+    <br>
+    
+
+
+    <h2 class="ui center aligned header" id="names" style="font-size: 2.1em; color:cyan">DJango Installation on Windows</h2>
+
+    <br>
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step 1:</u>&nbsp;&nbsp;
+        If you dont have python downloaded, then download it <a href = "https://www.python.org/downloads/" target="_blank">here</a>, else move to step 2.
+    </p>
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;">&nbsp;&nbsp;
+        If you are not sure if you have python downloaded or not, then simply type "python --version" in your command prompt.
+    </p>
+    <div style = "text-align: center;">
+        <img src="{% static 'cmndprompt.jpg'%}" style = "width: 60%; text-align: center;">
+    </div>
+
+    <br><br>
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step 2:</u>&nbsp;&nbsp;
+        Make a folder of your name choice.
+    </p>
+
+    <br><br>
+
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step 3:</u>&nbsp;&nbsp;
+        Open command prompt from your windows and then use it to locate yourself to the directory you made using the "cd" command. Once you are in the folder, then type the command "python -m venv env". 
+        Then again, type the command "env\Scripts\activate" as shown in the picture below. You will know you have activated the 
+        django environment once you see the "(env)"
+    </p>
+
+    <div style = "text-align: center;">
+        <img src="{% static 'cmndprompt1.jpg'%}" style="width: 60%; text-align: center;">
+    </div>
+    
+    <br><br>
+    
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step 4:</u>&nbsp;&nbsp;
+        Type "pip install django" in the command prompt to download django.
+    </p>
+
+    <div style = "text-align: center;">
+        <img src="{% static 'cmndprompt2.jpg'%}" style="width: 60%; text-align: center;">
+    </div>
+
+    <br><br>
+
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;">
+        Once you download django, You have to make a new django project and a new django app
+    </p>
+    
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step 5:</u>&nbsp;&nbsp;
+        To make a new django project: type "django-admin startproject '<i>project-name-of -our-choice</i>'" in the command prompt as shown below.
+    </p>
+
+    <div style = "text-align: center;">
+        <img src="{% static 'cmndprompt3.jpg'%}" style="width: 60%; text-align: center;">
+    </div>
+
+    <br><br>
+    
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step 6:</u>&nbsp;&nbsp;
+        Then type "python manage.py startapp '<i>app-name-of -our-choice</i>'" in the command prompt to make a new django app.
+
+    <div style = "text-align: center;">
+        <img src="{% static 'cmndprompt4.png'%}" style = "width: 60%; text-align: center;">
+    </div>
+
+    <br><br>
+    
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step 7:</u>&nbsp;&nbsp;
+        In your django_app folder, go to settings.py. Find "INSTALLED_APPS", and then add the name of your app like so:
+
+    <div style = "text-align: center;">
+        <img src="{% static 'cmndprompt4.jpg'%}" style = "width: 60%; text-align: center;">
+    </div>
+
+    <br><br>
+    
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step 8:</u>&nbsp;&nbsp;
+        Once you have all of the steps above working, finally enter the command "python manage.py runserver" in the command prompt to start the django app/server.
+
+    <div style = "text-align: center;">
+        <img src="{% static 'cmndprompt5.jpg'%}" style = "width: 100%; text-align: center;">
+    </div>
+
+    <br><br>
+    
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step 9:</u>&nbsp;&nbsp;
+        In step eight, you are provided with a link to your host site. Go to that site to see if you have installed Django correctly. If you have, you will see the same message as below:
+    <div style = "text-align: center;">
+        <img src="{% static 'cmndproj6.jpg'%}" style = "width: 60%; text-align: center;">
+    </div>
+
+
+
+    <br><br>
+
+    <footer class="footer-section">
+        <p>Website created by Zakir Dawood and Muyeed Hossain for the purpose of CPS530 Term Project.</p>
+    </footer>
+
+</body>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Introduction</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'page1.css'%}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+
+<body class="ui container">
+    <br><br>
+    {% if form.errors %}
+    <p>Error With Form</p>
+    {% endif %}
+
+    {% if next %}
+    <p>Access Denied</p>
+    {% endif %}
+
+    <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+
+        {{ form.username }}
+        {{ form.password }}
+
+        <input type="submit" value="login">
+        <input type="hidden" name="next" value="{{ next }}">
+    </form>
+
+    <!-- <form class="ui form" method="post" action="{% url 'login' %}"> -->
+        <!-- {% csrf_token %}
+
+        {{ form.username }}
+        {{ form.password }} -->
+
+
+        <!-- <div class="field">
+          <label>Username:</label>
+          <input type="text" name="username" placeholder="Username">
+        </div>
+        <div class="field">
+          <label>Password:</label>
+          <input type="password" name="password" placeholder="Password">
+        </div>
+        <button class="ui button" type="submit" value="login">Submit</button> -->
+    <!-- </form> -->
+</body>

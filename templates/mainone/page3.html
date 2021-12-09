@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Tutorial</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'page6.css'%}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+
+<body class="ui container" id="main-body">
+    <br>
+    
+    <div class="ui centered grid">
+        <div class="sixteen columns">
+            <div class="ui text menu" id="menu">
+                <a class="item" id="menu-item" href="/page1">Introduction&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page2">Installation&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item active" id="menu-item" href="/page3" style="color: cyan;">Tutorial&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page4">Demo&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page5">Conclusion&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page6">Credits&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h1 class="ui center aligned header" id="creator-title">Tutorials</h1>
+
+    <br>
+    <br>
+
+    <h2 class="ui center aligned header" id="names" style="font-size: 2.1em; color: cyan;">Semantic UI Tutorial</h2>
+
+    <br>
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step One:</u> &nbsp;&nbsp;Ensure you include the "ui container" as the class of your body element. This will make sure the elements within it follow the Semantic UI framework.</p>
+    
+    <div style="width: 100%; height: 35%; padding-left: 22.5%;">
+            <textarea style="width: 70%; height: 30%; background:#EEEDF0; color:#252540; background-color: antiquewhite;">                                                    
+                &lt;body class="ui container" id="main-body"&gt;
+    
+                &lt;/body&gt;
+            </textarea>
+    </div>
+
+    <br><br>
+
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center; margin-top: -15%;"><u>Step Two:</u> &nbsp;&nbsp;To create a menu at the top of your page, add the class "ui text menu" to your div element.  Each item will have the class "active" while the current page item will have the class "item-active".</p>
+    
+    <div style="width: 100%; height: 35%; padding-left: 22.5%;">
+            <textarea style="width: 70%; height: 50%; background:#EEEDF0; color:#252540; background-color: antiquewhite;">                                                    
+                &lt;div class="ui text menu" id="menu"&gt;
+                    &lt;a class="item" id="menu-item" href="page1.html"&gt;Introduction&lt;/a&gt;
+                    &lt;a class="item" id="menu-item"&gt;Installation&lt;/a&gt;
+                    &lt;a class="item-active" id="menu-item" href="page3.html"&gt;Tutorial&lt;/a&gt;
+                    &lt;a class="item" id="menu-item"&gt;Demo&lt;/a&gt;
+                    &lt;a class="item" id="menu-item" href="page5.html"&gt;Conclusion&lt;/a&gt;
+                    &lt;a class="item" id="menu-item" href="page6.html"&gt;Credits&lt;/a&gt;
+                &lt;/div&gt;
+            </textarea>
+    </div>
+
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step Three:</u> &nbsp;&nbsp;To create a grid, similar to the Bootstrap framework, create a div with the class "ui grid". The elements inside this div must have class names similar to those listed in the code below. The number will vary depending on how you wish to size your elements. The one below splits the screen in half, giving each element 1/2 the screen, equivalent to 8 columns.</p>
+    
+    <div style="width: 100%; height: 20%; padding-left: 22.5%;">
+        <textarea style="width: 70%; height: 50%; background:#EEEDF0; color:#252540; background-color: antiquewhite;">
+            &lt;div class="ui grid"&gt;
+                &lt;div class="eight wide column"&gt;
+                        Your Elements
+                &lt;/div&gt;
+                &lt;div class="eight wide column"&gt;
+                        Your Elements
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </textarea>
+    </div>
+
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step Four:</u> &nbsp;&nbsp;To style your images, you again change the name of your class accordingly. For example, below we have a circular medium sized image. The class reflects that.</p>
+    
+    <div style="width: 100%; height: 20%; padding-left: 22.5%;">
+        <textarea style="width: 70%; height: 50%; background:#EEEDF0; color:#252540; background-color: antiquewhite;">
+            &lt;img class="ui centered medium circular image" id="bounce" src="IMG-1010.jpg"&gt;
+        </textarea>
+    </div>
+
+
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Basic Idea:</u> &nbsp;&nbsp;We obviously cannot cover everything Semantic UI has to offer. However, as a general guide, check out the <a href="https://semantic-ui.com/" target="_blank">Semantic UI documentation</a>. To obtain what you are looking for, you will likely have to change a class name to match the documentation. Below we have listed one example to demonstrate that. To center a header, use the class listed.</p>
+    
+    <div style="width: 100%; height: 20%; padding-left: 22.5%;">
+        <textarea style="width: 70%; height: 50%; background:#EEEDF0; color:#252540; background-color: antiquewhite;">
+            &lt;h1 class="ui center aligned header"&gt;This is a header&lt;/h1&gt;
+        </textarea>
+    </div>
+
+    <h2 class="ui center aligned header" id="names" style="font-size: 2.1em; color: cyan;">Django Tutorial</h2>
+
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step One:</u> &nbsp;&nbsp;To allow your user to navigate from page to page, you must render each page upon entry. To do so, add a function for each page like below in the views.py file.</p>
+    
+    <div style="width: 100%; height: 20%; padding-left: 22.5%;">
+            <textarea style="width: 70%; height: 70%; background:#EEEDF0; color:#252540; background-color: antiquewhite;">                                                    
+                def index(request):
+                    return render(request, 'mainone/page1.html')
+            </textarea>
+    </div>
+
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step Two:</u> &nbsp;&nbsp;Add the path of your previous function to your urls.py file like so.</p>
+    
+    <div style="width: 100%; height: 20%; padding-left: 22.5%;">
+            <textarea style="width: 70%; height: 80%; background:#EEEDF0; color:#252540; background-color: antiquewhite;">                                                    
+                from django.urls import path, include
+                from loginpage.views import index
+                urlpatterns = [
+                    path('page1', index),
+                ]
+            </textarea>
+    </div>
+
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step Three:</u> &nbsp;&nbsp;To now have the ability to send emails, we will create another function like below in the views.py file. Remember to use the POST method on your html file.</p>
+    
+    <div style="width: 100%; height: 25%; padding-left: 22.5%;">
+            <textarea style="width: 70%; height: 60%; background:#EEEDF0; color:#252540; background-color: antiquewhite;">                                                    
+                def sent_page(request):
+                    useradress = request.POST.get("name")
+                    receiver = request.POST.get("receiver")
+                    subject = request.POST.get("subject")
+                    contenttext = request.POST.get("text")
+                    send_mail(subject, contenttext, useradress, [receiver], fail_silently=False)
+                    return render(request, 'mainone/sentpage.html')
+            </textarea>
+    </div>
+
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step Four:</u> &nbsp;&nbsp;You now must fill in the following variables accordingly in your settings.py file. If you do not know the port number/host, search up your email service provider to find out.</p>
+    
+    <div style="width: 100%; height: 20%; padding-left: 22.5%;">
+            <textarea style="width: 70%; height: 65%; background:#EEEDF0; color:#252540; background-color: antiquewhite;">                                                    
+                EMAIL_HOST = ''
+                EMAIL_PORT = ''
+                EMAIL_HOST_USER = ''
+                EMAIL_HOST_PASSWORD = ''
+                EMAIL_USE_TLS = true/false
+            </textarea>
+    </div>
+
+    <p style="color: #EEEDF0; font-size: 1.3em; text-align: center;"><u>Step Five:</u> &nbsp;&nbsp;If you need additional help with your django page(s), follow the <a href="https://docs.djangoproject.com/en/3.2/" target="_blank">django documentation.</a></p>
+
+    <br><br><br>
+
+    <footer class="footer-section">
+        <p>Website created by Zakir Dawood and Muyeed Hossain for the purpose of CPS530 Term Project.</p>
+    </footer>
+</body>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Demo</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'page6.css'%}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+
+<body class="ui container" id="main-body">
+    <br>
+    
+    <div class="ui centered grid">
+        <div class="sixteen columns">
+            <div class="ui text menu" id="menu">
+                <a class="item" id="menu-item" href="/page1">Introduction&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page2">Installation&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page3">Tutorial&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item active" id="menu-item" href="/page4" style="color: cyan;">Demo&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page5">Conclusion&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page6">Credits&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <h1 class="ui center aligned header" id="creator-title">Demo Page</h1>
+    <p style="color: #EEEDF0; text-align: center;">This page will send an email to the receiver's email address.</p><br>
+
+    <form class="ui form" action="/sentpage" method="post">
+        {% csrf_token %}
+        <div class="field">
+          <label style="color: #EEEDF0;">Email Address of User</label>
+          <input type="text" name="user" placeholder="Email Address">
+        </div>
+        <div class="field">
+            <label style="color: #EEEDF0;">Email Adress of Receiver</label>
+            <input type="text" name="receiver" placeholder="Email Address">
+        </div>
+        <div class="field">
+            <label style="color: #EEEDF0;">Email Suject</label>
+            <input type="text" name="subject" placeholder="Subject">
+        </div>
+        <div class="field">
+            <label style="color: #EEEDF0;">Email Content</label>
+            <textarea rows="7" name="text" placeholder="Please ensure you include an email adress in your text that the user can reply to if needed"></textarea>
+        </div>
+        <button class="ui button" type="submit">Send email</button>
+      </form>
+
+      <br><br>
+</body>

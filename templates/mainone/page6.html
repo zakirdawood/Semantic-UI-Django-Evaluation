@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Credits</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'page6.css'%}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+
+<body class="ui container" id="main-body">
+    <br>
+    
+    <div class="ui centered grid">
+        <div class="sixteen columns">
+            <div class="ui text menu" id="menu">
+                <a class="item active" id="menu-item" href="/page1">Introduction&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page2">Installation&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page3">Tutorial&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page4">Demo&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/page5">Conclusion&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="active item" id="menu-item" href="/page6" style="color: cyan;">Credits&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h1 class="ui center aligned header" id="creator-title">The Creators</h1>
+
+    <br><br>
+
+    <div class="ui grid" style="animation: fade-up 650ms 400ms backwards;">
+        <div class="eight wide column" style="margin-right: -6%;">
+            <h1 class="ui center aligned header" id="names" style="color: cyan;">Zakir</h1>
+            <br>
+            <img class="ui centered medium circular image" id="bounce" src="{% static 'IMG-1011.jpg'%}">
+            <br>
+            <h1 class="ui center aligned header" id="responsibilities">Responsibilties</h1>
+            <div class="ui list" id="color">
+                <div class="item">
+                    <div class="header" style="text-align: center; font-size: 1.2em; color: #EEEDF0;"><strong>Page 1</strong></div>
+                    <p style="text-align: center;">HTML/CSS, Semantic UI, Fotorama</p>
+                </div>
+                <div class="item">
+                    <div class="header" style="text-align: center; font-size: 1.2em; color: #EEEDF0;"><strong>Page 3</strong></div>
+                    <p style="text-align: center;">Semantic UI Tutorial</p>
+                </div>
+                <div class="item">
+                    <div class="header" style="text-align: center; font-size: 1.2em; color: #EEEDF0;"><strong>Page 4</strong></div>
+                    <p style="text-align: center;">Semantic UI and Django</p>
+                </div>
+                <div class="item">
+                    <div class="header" style="text-align: center; font-size: 1.2em; color: #EEEDF0;"><strong>Page 5</strong></div>
+                    <p style="text-align: center;">HTML/CSS, Semantic UI</p>
+                </div>
+                <div class="item">
+                    <div class="header" style="text-align: center; font-size: 1.2em; color: #EEEDF0;"><strong>Page 6</strong></div>
+                    <p style="text-align: center;">HTML/CSS, Semantic UI</p>
+                </div>
+                <div class="item">
+                    <div class="header" style="text-align: center; font-size: 1.2em; color: #EEEDF0;"><strong>Hosting</strong></div>
+                    <p style="text-align: center;">Successfully hosted site on Heroku</p>
+                </div>
+            </div>
+        </div>
+        <div class="eight wide column" style="margin-left: 6%;">
+            <h1 class="ui center aligned header" id="names" style="color: cyan;">Muyeed</h1>
+            <br>
+            <img class="ui centered medium circular image" id="bounce" src="{% static 'IMG-1403.jpg'%}">
+            <br>
+            <h1 class="ui center aligned header" id="responsibilities">Responsibilties</h1>
+            <div class="ui list" id="color">
+                <div class="item">
+                    <div class="header" id="responsibilities-header"><strong>Page 2</strong></div>
+                    <p style="text-align: center;">HTML/CSS, Semantic UI</p>
+                </div>
+                <div class="item">
+                    <div class="header" style="text-align: center; font-size: 1.2em; color: #EEEDF0;"><strong>Page 3</strong></div>
+                    <p style="text-align: center;">Django Tutorial</p>
+                </div>
+                <div class="item">
+                    <div class="header" style="text-align: center; font-size: 1.2em; color: #EEEDF0;"><strong>Page 4</strong></div>
+                    <p style="text-align: center;">Semantic UI</p>
+                </div>
+                <div class="item">
+                    <div class="header" style="text-align: center; font-size: 1.2em; color: #EEEDF0;"><strong>Page 5</strong></div>
+                    <p style="text-align: center;">HTML/CSS, Semantic UI</p>
+                </div>
+                <div class="item">
+                    <div class="header" style="text-align: center; font-size: 1.2em; color: #EEEDF0;"><strong>Hosting</strong></div>
+                    <p style="text-align: center;">Assisted in hosting site on Heroku</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <h1 class="ui center aligned header" id="reference">References</h1>
+    <div class="ui list" id="color">
+        <div class="item">
+            <div class="header" id="references-header"><strong>Page 1</strong></div>
+            <p style="text-align: center;"><a style="text-align: center;" href="https://fotorama.io/#40ff508f-01e5-4417-bee0-20633efc6147" target="_blank">Fotorama Documentation and Source Code</a></p>
+        </div>
+        <div class="item">
+            <div class="header" id="references-header"><strong>Page 2</strong></div>
+            <p style="text-align: center;"><a style="text-align: center;" href="https://youtu.be/LQTMqGns7Co" target="_blank">Installation Help</a></p>
+        </div>
+        <div class="item">
+            <div class="header" id="references-header"><strong>Page 4</strong></div>
+            <p style="text-align: center;"><a style="text-align: center;" href="https://youtu.be/xNqnHmXIuzU" target="_blank">Email Setup Help</a></p>
+        </div>
+        <div class="item">
+            <div class="header" id="references-header"><strong>Page 1-6</strong></div>
+            <p style="text-align: center;"><a style="text-align: center;" href="https://semantic-ui.com/" target="_blank">Semantic UI Documentation</a></p>
+        </div>
+        <div class="item">
+            <div class="header" id="references-header"><strong>Page 1-6</strong></div>
+            <p style="text-align: center;"><a style="text-align: center;" href="https://docs.djangoproject.com/en/3.2/" target="_blank">Django Documentation</a></p>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <footer class="footer-section">
+        <p>Website created by Zakir Dawood and Muyeed Hossain for the purpose of CPS530 Term Project.</p>
+    </footer>
+</body>
