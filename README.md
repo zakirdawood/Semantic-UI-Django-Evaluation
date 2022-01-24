@@ -4,4 +4,8 @@ A website created to familiarize with the frameworks Semantic UI and Django. Thi
 Link: https://zdmhcps530.herokuapp.com/
 
 # Contributors
-
+# Contributors 
+<ul>
+  <li>Zakir - @zakirdawood</li>
+  <li>Muyeed - @muyeed10</li>
+</ul>
